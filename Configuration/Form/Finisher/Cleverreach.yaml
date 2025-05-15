@@ -1,0 +1,95 @@
+prototypes:
+  standard:
+    finishersDefinition:
+      CleverreachFinisher:
+        implementationClassName: 'Fixpunkt\FpCleverreachForms\Domain\Finishers\CleverreachFinisher'
+        formEditor:
+          iconIdentifier: form-finisher
+          label: Cleverreach Finisher
+          predefinedDefaults:
+            options:
+              active: '1'
+              formId: ''
+              groupId: ''
+              custom: {  }
+    formElementsDefinition:
+      Form:
+        formEditor:
+          editors:
+            900:
+              selectOptions:
+                1746689448:
+                  value: 'CleverreachFinisher'
+                  label: 'Cleverreach Finisher'
+          propertyCollections:
+            finishers:
+              1746689448:
+                identifier: 'CleverreachFinisher'
+                editors:
+                  100:
+                    identifier: header
+                    templateName: Inspector-CollectionElementHeaderEditor
+                    label: "Cleverreach Finisher"
+                  120:
+                    identifier: 'formId'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'Form ID'
+                    propertyPath: 'options.formId'
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                  130:
+                    identifier: 'groupId'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'Group ID'
+                    propertyPath: 'options.groupId'
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                  105:
+                    identifier: 'active'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'Activate Finisher'
+                    fieldExplanationText: '(empty = inactive, 1 = active)'
+                    propertyPath: 'options.active'
+                    enableFormelementSelectionButton: true
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                  140:
+                    identifier: 'email'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'E-Mail'
+                    propertyPath: 'options.email'
+                    enableFormelementSelectionButton: true
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                  190:
+                    identifier: 'example'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'Find Field'
+                    propertyPath: 'options.example'
+                    enableFormelementSelectionButton: true
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                  200:
+                    identifier: custom
+                    templateName: Inspector-PropertyGridEditor
+                    label: Custom Options
+                    propertyPath: 'options.custom'
+                    propertyValidators:
+                      20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+                    isSortable: false
+                    enableAddRow: true
+                    enableDeleteRow: true
+                    removeLastAvailableRowFlashMessageTitle: formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageTitle
+                    removeLastAvailableRowFlashMessageMessage: formEditor.elements.SelectionMixin.editor.options.removeLastAvailableRowFlashMessageMessage
+                    shouldShowPreselectedValueColumn: single
+                    multiSelection: false
+                    gridColumns:
+                      0:
+                        name: label
+                        title: Cleverreach Feld
+                      1:
+                        name: value
+                        title: Value
+                  9999:
+                    identifier: removeButton
+                    templateName: Inspector-RemoveElementEditor

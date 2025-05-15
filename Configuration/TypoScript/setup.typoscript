@@ -1,0 +1,8 @@
+plugin.tx_form.settings.yamlConfigurations {
+    1746689448 = EXT:fp_cleverreach_forms/Configuration/Form/BaseSetup.yaml
+}
+
+module.tx_form.settings.yamlConfigurations {
+    1746689448 = EXT:fp_cleverreach_forms/Configuration/Form/BaseSetup.yaml
+    1746689449 = EXT:fp_cleverreach_forms/Configuration/Form/Backend.yaml
+}

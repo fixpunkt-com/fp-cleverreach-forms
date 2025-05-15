@@ -1,0 +1,29 @@
+{
+  "name": "fixpunkt/fp-cleverreach-forms",
+  "type": "typo3-cms-extension",
+  "description": "Integriert fp_cleverreach mit ext:form",
+  "authors": [
+    {
+      "name": "David Schneider",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^12",
+    "fixpunkt/fp-cleverreach": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fixpunkt\\FpCleverreachForms\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "fp_cleverreach_forms"
+    }
+  },
+  "replace": {
+    "fixpunkt/fp-cleverreach-forms": "self.version",
+    "typo3-ter/fp-cleverreach-forms": "self.version"
+  }
+}

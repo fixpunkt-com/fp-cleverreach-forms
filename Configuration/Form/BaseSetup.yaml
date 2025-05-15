@@ -1,0 +1,15 @@
+imports:
+  # Elements
+  - { resource: "./Finisher/Cleverreach.yaml" }
+
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          templateRootPaths:
+            1746689448: 'EXT:fp_cleverreach_forms/Resources/Private/Templates/'
+          partialRootPaths:
+            1746689448: 'EXT:fp_cleverreach_forms/Resources/Private/Partials/'
+          layoutRootPaths:
+            1746689448: 'EXT:fp_cleverreach_forms/Resources/Private/Layouts/'

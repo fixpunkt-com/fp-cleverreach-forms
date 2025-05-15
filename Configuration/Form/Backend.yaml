@@ -1,0 +1,54 @@
+prototypes:
+  standard:
+    finishersDefinition:
+      CleverreachFinisher:
+        implementationClassName: 'Fixpunkt\FpCleverreachForms\Domain\Finishers\CleverreachFinisher'
+    formElementsDefinition:
+      Form:
+        finishersDefinition:
+          CustomFinisher:
+            formEditor:
+              iconIdentifier: 'form-finisher'
+              label: 'Custom Finisher'
+              predefinedDefaults:
+                options:
+                  active: '1'
+                  formId: ''
+                  groupId: ''
+                  email: ''
+            # displayed when overriding finisher settings
+            FormEngine:
+              label: 'Custom Finisher'
+              elements:
+                active:
+                  label: 'Active'
+                  config:
+                    type: 'boolean'
+                formId:
+                  label: 'Form ID'
+                  config:
+                    type: 'text'
+                groupId:
+                  label: 'Group ID'
+                  config:
+                    type: 'text'
+                custom:
+                  title: tt_content.finishersDefinition.EmailToReceiver.recipients.label
+                  type: array
+                  section: true
+                  sectionItemKey: email
+                  sectionItemValue: name
+                  el:
+                    _arrayContainer:
+                      type: array
+                      title: tt_content.finishersDefinition.EmailToSender.recipients.item.label
+                      el:
+                        email:
+                          label: tt_content.finishersDefinition.EmailToSender.recipients.email.label
+                          config:
+                            type: email
+                            required: true
+                        name:
+                          label: tt_content.finishersDefinition.EmailToSender.recipients.name.label
+                          config:
+                            type: input
