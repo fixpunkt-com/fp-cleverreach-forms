@@ -1,7 +1,7 @@
 {
   "name": "fixpunkt/fp-cleverreach-forms",
   "type": "typo3-cms-extension",
-  "description": "Integriert fp_cleverreach mit ext:form",
+  "description": "Cleverreach Form Integration",
   "authors": [
     {
       "name": "David Schneider",
